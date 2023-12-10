@@ -1,0 +1,16 @@
+[package]
+name = "db"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#sea-orm = { version = "0.12.7", features = ["sqlx-mysql", "sqlx-sqlite", "runtime-tokio-rustls", "macros", "debug-print", "mock"] } # 需要引入features，要不然会连不上数据库
+log = { version = "0.4.20" }
+serde = { version = "1.0.193", features = ["derive"] }
+config = { path = "../config" }
+tokio = { version = "1.35.0", features = ["full"] }
+tracing-subscriber = "0.3.17"
+env_logger = "0.10.1"
+sqlx = { version = "0.7.3", features = ["mysql", "runtime-tokio"] }

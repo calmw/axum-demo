@@ -1,0 +1,10 @@
+[db]
+host = "127.0.0.1"
+port = 3306
+db_pwd = "root"
+db_user = "root"
+database = "axum_test"
+
+[server]
+host = "0.0.0.0"
+port = 8000
