@@ -10,4 +10,5 @@ config = { path = "../config" }
 tracing-subscriber = "0.3.17"
 env_logger = "0.10.1"
 tokio = { version = "1.35.0", features = ["full"] }
-sqlx = { version = "0.7.3", features = ["mysql", "runtime-tokio"] }
+mysql = "24.0.0"
+chrono = "0.4.31"
