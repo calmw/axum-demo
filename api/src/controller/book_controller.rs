@@ -5,11 +5,10 @@ pub mod book_controller {
         let book_id: Option<&i32> = params.get("id");
         match book_id {
             Some(i) => {
-
                 format!("Get items with query params:,{:?},id={:?}", book_id, i)
             }
             _ => {
-                format!("Get params id error")
+                "Get params id error".to_string()
             }
         }
     }

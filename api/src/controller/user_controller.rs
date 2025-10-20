@@ -29,7 +29,7 @@ pub mod user_controller {
                 format!("Get items with query params:,{:?},id={:?}", user_id, i)
             }
             _ => {
-                format!("Get params id error")
+                "Get params id error".to_string()
             }
         }
     }
